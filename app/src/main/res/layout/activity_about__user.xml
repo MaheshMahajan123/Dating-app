@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorpink"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/textView2"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="11dp"
+        android:hint="Name"
+        android:textColor="@color/GhostWhite"
+        android:textColorHint="@color/Ivory"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/city1"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="city"
+        android:inputType="textPersonName"
+        android:textColor="@color/GhostWhite"
+        android:textColorHint="@color/Ivory" />
+
+    <EditText
+        android:id="@+id/hobies"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city1"
+        android:layout_alignStart="@+id/city1"
+        android:layout_alignEnd="@+id/city1"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="Hobbies"
+        android:paddingBottom="15dp"
+        android:textColor="@color/GhostWhite"
+        android:textColorHint="@color/Ivory" />
+
+    <EditText
+        android:id="@+id/About"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hobies"
+        android:layout_alignStart="@+id/hobies"
+        android:layout_alignEnd="@+id/hobies"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="About"
+        android:paddingBottom="15dp"
+        android:textColor="@color/GhostWhite"
+        android:textColorHint="@color/Ivory" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/About"
+        android:layout_alignStart="@+id/city1"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:text="Status"
+        android:textColor="@color/Black"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/About"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="133dp"
+        android:layout_toEndOf="@+id/status">
+
+        <RadioButton
+            android:id="@+id/Single"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Single" />
+
+        <RadioButton
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Married" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Committed" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/mDisplayDate"
+        android:layout_width="196dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectoutline"
+        android:paddingLeft="4dp"
+        android:paddingTop="3dp"
+        android:text="Select Date"
+        android:textColor="@color/Black"
+        android:textSize="22dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignTop="@+id/mDisplayDate"
+        android:layout_alignEnd="@+id/mDisplayDate"
+        android:layout_alignBottom="@+id/mDisplayDate"
+        android:layout_marginStart="-31dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/mDisplayDate"
+        app:srcCompat="@mipmap/date" />
+
+
+    <ImageView
+        android:id="@+id/mButtonChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+        android:layout_below="@+id/mDisplayDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="95dp"
+        android:layout_height="89dp"
+        android:layout_above="@+id/mButtonChooseImage"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="69dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:indeterminateTint="@color/colorGreen_900"
+        android:indeterminateTintMode="src_atop" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Submit"
+        android:textColor="@color/Azure"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/status"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_toStartOf="@+id/radioGroup"
+        android:text="Birth Date"
+        android:textColor="@color/Black"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="305dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="58dp"
+        android:text="User Information"
+        android:textAlignment="center"
+        android:textColor="@color/AliceBlue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

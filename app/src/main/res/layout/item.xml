@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/id"
+        android:layout_width="375dp"
+        android:layout_height="533dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/Black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="231dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="490sp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/bungee"
+            android:paddingLeft="15dp"
+            android:textColor="@color/LightSteelBlue"
+            android:textSize="15dp"
+            tools:text="ghtjtyjyuj" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="502sp"
+            app:srcCompat="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/matchesname"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="458dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/archivo_black"
+            android:paddingLeft="10dp"
+            android:textColor="@color/LightSteelBlue"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="98dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:paddingTop="5dp"
+            android:textColor="@color/LightSteelBlue"
+            android:textSize="15dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

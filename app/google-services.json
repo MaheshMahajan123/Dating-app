@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "584489046710",
+    "firebase_url": "https://tinderchat-83f7f.firebaseio.com",
+    "project_id": "tinderchat-83f7f",
+    "storage_bucket": "tinderchat-83f7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584489046710:android:a74f85f7d1663c9c",
+        "android_client_info": {
+          "package_name": "com.example.tinderchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584489046710-1m0mubu2g3ircl3irh6juss0enqdaicv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tinderchat",
+            "certificate_hash": "4c32ae949a5729349d0eebd4e6adeaf5ca616c24"
+          }
+        },
+        {
+          "client_id": "584489046710-dssoelko5t55pod3qme2tdcm263bhojo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtHnK1MacPLgly8e-bcXg3SIHkvMKUrgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584489046710-dssoelko5t55pod3qme2tdcm263bhojo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

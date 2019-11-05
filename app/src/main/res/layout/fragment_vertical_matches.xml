@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Vartical.Vertical_Matches">
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="295dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/frame"
+        android:text="you have     12     friends"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape" />
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="10dp">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editText"-->
+<!--            android:layout_width="334dp"-->
+<!--            android:layout_height="37dp"-->
+<!--            android:background="@drawable/shape"-->
+<!--            android:ems="10"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:hint="@android:string/search_go"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:paddingLeft="30dp" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:src="@drawable/ic_search" />-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="93dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:text="New Matches"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorRed_A400" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Hori"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Message"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/Red" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/varti"
+        android:layout_width="match_parent"
+        android:layout_height="419dp"
+        android:layout_marginLeft="5dp"
+
+        />
+
+</LinearLayout>

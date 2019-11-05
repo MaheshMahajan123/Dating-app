@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="406dp"
+        android:layout_height="607dp"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/appbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/GhostWhite"
+        tools:itemCount="22"
+        tools:listitem="@layout/recycler_view_item" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/Black">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/White"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <ImageView
+                    android:id="@+id/chatback"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    app:srcCompat="@drawable/back_aro" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileimage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/addphoto" />
+
+                <TextView
+                    android:id="@+id/matchesname"
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="ffffff"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/deletall"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="18dp"
+                    android:tint="@color/Red"
+                    app:srcCompat="@drawable/ic_delete" />
+            </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/frame"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/typing"
+            android:layout_width="325dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="Typing..."
+            android:paddingRight="12dp"
+            android:textColor="@color/Black"
+            android:textCursorDrawable="@color/Black" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_menu_send">
+
+        </ImageView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
